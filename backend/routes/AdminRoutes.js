@@ -145,7 +145,7 @@ router.put("/cart/:id", isRayan, async (req, res) => {
   
       res.json({ message: "Cart update", cart: updatedCart });
     } catch (error) {
-      console.error("❌ Error MAJ cart :", error);
+      console.error(" Error MAJ cart :", error);
       res.status(500).json({ message: "Server error when updating basket." });
     }
 });
@@ -167,7 +167,7 @@ router.put("/address/:id", isRayan, async (req, res) => {
 
         res.json({ message: "Address update", address: updatedAddress });
     } catch (error) {
-        console.error("❌ Error MAJ address :", error);
+        console.error(" Error MAJ address :", error);
         res.status(500).json({ message: "Server error updating address." });
     }
 });  
